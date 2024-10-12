@@ -1,0 +1,9 @@
+# This is a basic example Blueprint for a REACT app
+services:
+  - type: web # A React App named react-app running on a free instance
+    plan: free
+    name: react-app
+    runtime: node
+    repo: https://github.com/opoupeney/sampleapp.git
+    buildCommand: "npm run build"
+    startCommand: "npm run start"
